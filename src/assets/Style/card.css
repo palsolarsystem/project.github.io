@@ -1,0 +1,131 @@
+.section {
+    min-height: 100vh;
+    padding: 60px 20px;
+    text-align: center;
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: serif;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #FBBF24;
+    margin: 15px auto;
+}
+
+.section > p {
+    font-size: 1.125rem;
+    color: #666;
+    margin-bottom: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(200, 200, 200, 0.3);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover img {
+    transform: scale(1.03);
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 40px 15px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .service-card {
+        padding: 15px;
+    }
+
+    .service-card img {
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .service-card {
+        padding: 15px;
+    }
+
+    .service-card img {
+        height: 160px;
+    }
+
+    .service-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 10px;
+    }
+}

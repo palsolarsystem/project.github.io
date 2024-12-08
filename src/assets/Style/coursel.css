@@ -1,0 +1,207 @@
+
+.home-container {
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient(to right, #000000, #1a1a1a);
+    overflow: hidden;
+    margin-top: -63px;
+  }
+  
+  .content-row {
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .carousel-column {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    
+  }
+  
+  .carousel-wrapper {
+    height: 100%;
+  }
+  
+  .carousel-slide {
+    height: 100vh;
+   
+  }
+  
+  .carousel-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .content-column {
+    position: relative;
+    width: 50%;
+    margin-top: 5%;
+    margin-left: auto;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .content-glass-panel {
+    width: 100%;
+    padding: 3rem;
+    background: rgba(215, 215, 215, 0.35);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .content-wrapper {
+    max-width: 600px;
+  }
+  
+  .main-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #333;
+    font-family: serif;
+    margin-bottom: 1rem;
+  }
+  
+  .title-underline {
+    height: 3px;
+    width: 100px;
+    background: #FBBF24;
+    margin-bottom: 1.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.25rem;
+    color: rgba(63, 63, 63, 0.9);
+    margin-bottom: 2rem;
+    font-weight: 300;
+  }
+  
+  .services-container {
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .services-title {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 1rem;
+    font-family: serif;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 135px;
+        height: 3px;
+        background: #FBBF24;
+        margin: 15px 0 0 0;
+      }
+  
+
+
+  }
+
+
+ 
+  
+  .typing-wrapper {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .typing-text {
+    color: #FBBF24;
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  
+  .branding-section {
+    margin-top: 2rem;
+  }
+  
+  .company-tagline {
+    color: rgba(39, 39, 39, 0.8);
+    font-size: 0.875rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+  }
+  
+  .company-name {
+    margin-top: 0.5rem;
+  }
+  
+  .plus-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FBBF24;
+    font-family: serif;
+  }
+  
+  .solar-text {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: white;
+    margin-left: 0.5rem;
+    font-family: serif;
+  }
+  
+  .typed-cursor {
+    color: #FBBF24;
+    font-size: 1.25rem;
+  }
+  
+  .carousel .control-dots,
+  .carousel .control-prev,
+  .carousel .control-next {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .content-row {
+      flex-direction: column;
+    }
+  
+    .carousel-column {
+      position: absolute;
+      height: 100vh;
+      
+    }
+  
+    .content-column {
+      width: 100%;
+      padding: 1rem;
+      margin-top: 10%;
+     
+    }
+  
+    .content-glass-panel {
+      padding: 1.5rem;
+    }
+  
+    .main-title {
+      font-size: 2.5rem;
+    }
+  
+    .services-container {
+      padding: 1rem;
+    }
+  
+    .typing-text {
+      font-size: 1rem;
+    }
+  }
